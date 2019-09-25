@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="project">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="depend">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="depend\cjson">
+      <UniqueIdentifier>{1b382a50-b840-451a-a90e-7ab3a147ff75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="depend\curl">
+      <UniqueIdentifier>{a9887577-8018-440e-8550-e72a4b0b637a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asyn_curl">
+      <UniqueIdentifier>{561849dc-1695-48a4-82d0-db3074805a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syn_curl">
+      <UniqueIdentifier>{e22ce4b2-1cb7-4c51-84c0-1706e9b87f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{040c11b8-8f7d-409b-8af6-b684c7e46dbc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\depend\cjson\autolink.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\config.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\forwards.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\json.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\json_batchallocator.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\json_features.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\json_tool.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\reader.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\value.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\cjson\writer.h">
+      <Filter>depend\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asyn_curl\curl_asyn_access.h">
+      <Filter>asyn_curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\syn_curl\curl_syn_access.h">
+      <Filter>syn_curl</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\curl.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\curlbuild.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\curlrules.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\curlver.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\easy.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\mprintf.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\multi.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\stdcheaders.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\curl\src\typecheck-gcc.h">
+      <Filter>depend\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\depend\cjson\json_internalarray.inl">
+      <Filter>depend\cjson</Filter>
+    </None>
+    <None Include="..\depend\cjson\json_internalmap.inl">
+      <Filter>depend\cjson</Filter>
+    </None>
+    <None Include="..\depend\cjson\json_valueiterator.inl">
+      <Filter>depend\cjson</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\depend\cjson\json_reader.cpp">
+      <Filter>depend\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\cjson\json_value.cpp">
+      <Filter>depend\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\cjson\json_writer.cpp">
+      <Filter>depend\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\asyn_curl\curl_asyn_access.cpp">
+      <Filter>asyn_curl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\syn_curl\curl_syn_access.cpp">
+      <Filter>syn_curl</Filter>
+    </ClCompile>
+    <ClCompile Include="http_request.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
