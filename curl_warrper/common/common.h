@@ -21,3 +21,34 @@ public:
 		memset(this, 0, sizeof(stru_write_data));
 	}
 };
+
+struct stru_date_data
+{
+	std::string m_year;
+	std::string m_month;
+	std::string m_day;
+	std::string m_hour;
+	std::string m_min;
+	std::string m_seconds;
+
+public:
+	stru_date_data()
+	{
+		m_year = "";
+		m_month = "";
+		m_day = "";
+		m_hour = "";
+		m_min = "";
+		m_seconds = "";
+	}
+};
+
+
+namespace common_methods
+{
+	//get sys time
+	INT64 get_system_time();
+
+	//character conversion
+	void char_to_wchar(std::string _src , std::wstring & _dst);
+};

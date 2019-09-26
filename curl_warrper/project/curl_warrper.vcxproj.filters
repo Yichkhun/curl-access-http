@@ -95,6 +95,9 @@
     <ClInclude Include="..\common\common.h">
       <Filter>common</Filter>
     </ClInclude>
+    <ClInclude Include="..\common\file_folder_opt.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\depend\cjson\json_internalarray.inl">
@@ -128,6 +131,12 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\common.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\file_folder_opt.cpp">
+      <Filter>common</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

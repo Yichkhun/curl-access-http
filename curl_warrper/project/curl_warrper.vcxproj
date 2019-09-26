@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\asyn_curl;..\syn_curl;..\depend\curl\src;..\depend\cjson;..\project;..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -74,7 +74,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_MBCS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\asyn_curl;..\syn_curl;..\depend\curl\src;..\depend\cjson;..\project;..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -91,6 +91,7 @@
   <ItemGroup>
     <ClInclude Include="..\asyn_curl\curl_asyn_access.h" />
     <ClInclude Include="..\common\common.h" />
+    <ClInclude Include="..\common\file_folder_opt.h" />
     <ClInclude Include="..\depend\cjson\autolink.h" />
     <ClInclude Include="..\depend\cjson\config.h" />
     <ClInclude Include="..\depend\cjson\forwards.h" />
@@ -123,6 +124,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\common\common.cpp" />
+    <ClCompile Include="..\common\file_folder_opt.cpp" />
     <ClCompile Include="..\depend\cjson\json_reader.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
